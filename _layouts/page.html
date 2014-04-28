@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+<div id="fixednav">
+  <a href="/">
+    <img class="revealed-image" src="/gfx/00_inverse.png" />
+  </a>
+  <div class="revealed-image revealed-image-right">
+    <a href="javascript:history.back();">
+      <span class="glyphicon glyphicon-share flip-horizontal"></span>
+    </a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8">
+        <ul class="nav nav-pills nav-justified">
+          <li style="visibility: hidden"><a href="#content">&nbsp;</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<section class="white fixednav-spacer" id="content">
+  <div class="container space-below">
+    <div class="row">
+      <div class="col-xs-12 col-lg-offset-1 col-lg-10">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>

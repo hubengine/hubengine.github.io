@@ -1,0 +1,41 @@
+---
+layout: base
+---
+
+<section id="home">
+  <div class="logo">
+    <a href="/" title="Hub Engine">
+      <img src="/gfx/hubengine.png"
+          alt="Hub Engine Logo"
+      /></a>
+  </div>
+  <div class="intro">
+    {{ content }}
+  </div>
+</section>
+
+<section id="hubs">
+  <div class="row">
+    {% for hub in site.categories.hubs reversed %}
+      <div class="col-sm-6">
+        {% include hub.partial.html %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contact">
+  <p> 
+    <a href="https://maps.google.com/?q=80%20Haymarket&sll=51.5079033,-0.1317818">
+      Hub Engine<br />
+      1st Floor, New Zealand House<br />
+      80 Haymarket<br />
+      London SW1Y 4TE<br />
+      UK.</a>
+  </p>
+  <p>
+    Email:
+    <a href="mailto:info@hubengine.net">
+      info@hubengine.net</a>
+  </p>
+</section>
